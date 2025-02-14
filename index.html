@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="text">
+        <p style = "font-size: 30;">Test</p>
+    </div>
+    <div class="container ">
+        <input id = "color" type="color" >
+        <input type="number" id = "size" value = "30" >
+        <select name="font_options" id = "fonts" >
+              <option value="arial">Arial</option>
+              <option value="verdana">Verdana</option>
+              <option value="garamond">Garamond</option>
+
+        </select>
+          
+    </div>
+    <script >
+    const picker = document.querySelector('#color');
+    const size_picker = document.querySelector('#size');
+    const font_picker =document.querySelector("#fonts");
+
+    var t = document.querySelector(".text p");
+    picker.addEventListener("input",function(){
+        t.style.color = picker.value;});
+    size_picker.addEventListener("input",function(){
+        t.style.fontSize = size_picker.value + "px";});
+    font_picker.addEventListener("input",function(){
+        t.style.fontFamily = font_picker.value;
+    });
+
+    </script>
+</body>
+</html>
