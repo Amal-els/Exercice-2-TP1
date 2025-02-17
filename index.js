@@ -17,7 +17,7 @@ const font_picker =document.querySelector("#fonts");
 const color_picker = document.querySelector('#color');
 color_picker.addEventListener("input",()=>addEvent(color_picker,'color'));
 font_picker.addEventListener("input",()=>addEvent(font_picker,'fonts'));
-size_picker.addEventListener("input",()=>addEvent(size_picker,'size'))
+size_picker.addEventListener("input",()=>addEvent(size_picker,'size'));
 
 
 
